@@ -9,6 +9,7 @@ public class TddDemoAppApplication {
     public static void main(String[] args) {
         System.out.println("start");
         SpringApplication.run(TddDemoAppApplication.class, args);
+        System.out.println("finish");
     }
 
 }
