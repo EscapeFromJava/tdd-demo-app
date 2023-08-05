@@ -15,12 +15,14 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public PersonDto getById(Integer id) {
+        System.out.println("Get");
         Person person = personRepository.find(id);
         return personMapper.convert(person);
     }
 
     @Override
     public String save(PersonDto dto) {
+        System.out.println("Save");
         Person convert = personMapper.convert(dto);
         return personRepository.save(convert);
     }
