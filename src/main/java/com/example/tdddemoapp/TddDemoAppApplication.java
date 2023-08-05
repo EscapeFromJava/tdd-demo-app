@@ -16,6 +16,7 @@ public class TddDemoAppApplication implements CommandLineRunner {
         SpringApplication.run(TddDemoAppApplication.class, args);
         String temp = "temp";
         System.out.println("finish");
+        System.out.println("extra");
     }
 
     @Override
